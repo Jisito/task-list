@@ -1,3 +1,10 @@
-<div class="container">
-    <h1>Task-list</h1>
-</div>
+<header>
+    <h1>{{title}}</h1>
+    <app-boton
+        color="red"
+        text="Add Task"
+
+        (btnClick)="toggleAddTask()">
+
+    </app-boton>
+</header>
