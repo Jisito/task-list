@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BotonComponent } from './components/boton/boton.component';
+import { TaskComponent } from './components/task/task.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BotonComponent
+    BotonComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
