@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input,Output } from '@angular/core';
   styleUrls: ['./boton.component.css'],
 })
 export class BotonComponent {
-  boton: string = 'Click';
+  boton: string = 'Add Task';
 
   /* Entradas */
   @Input() text: string = '';
