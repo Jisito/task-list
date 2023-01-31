@@ -1,16 +1,14 @@
-.task{
-    background-color: azure;
-    margin: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-
+.task {
+  background-color: azure;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
-.task.reminder{
-    border-left:  5px solo  green;
-    
+.task.reminder {
+  border-left: 5px solid green;
 }
-.task h3{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+.task h3 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }

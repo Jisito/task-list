@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input,Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-boton',
@@ -13,12 +14,11 @@ export class BotonComponent {
   @Input() color: string = '';
   /* Salidas */
 
-  @Output() btnClick=new EventEmitter();
+  @Output() btnClick = new EventEmitter();
 
   constructor() {}
   onClick() {
     console.log('Hellow');
     this.btnClick.emit();
-    
   }
 }

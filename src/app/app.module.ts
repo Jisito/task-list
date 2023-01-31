@@ -3,12 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Router, Routes } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { BotonComponent } from './components/boton/boton.component';
 import { TaskComponent } from './components/task/task.component';
 import { TasksItemComponent } from './components/tasks-item/tasks-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { AddTaskComponent } from './components/add-task/add-task.component';
+const appRoutes: Routes = [{ path: '', component: TaskComponent }];
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,12 +19,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BotonComponent,
     TaskComponent,
     TasksItemComponent,
+    AddTaskComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes, { enableTracing: true }),
   ],
   providers: [],
   bootstrap: [AppComponent],
